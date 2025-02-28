@@ -1,0 +1,16 @@
+
+     {
+          "company":"Apple",
+          "product":[
+               {
+                    "name":"iPhone",
+                    "price":"1200 USD",
+                    "features":["Face ID","Touch ID","5F connectivity"]
+               },
+               {
+                    "name":"MacBook",
+                    "price":"3000 USD",
+                    "features":["Face ID","Touch ID","5F connectivity"]
+               }
+          ]
+     }

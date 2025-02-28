@@ -1,0 +1,30 @@
+[
+     {
+          "name":"Honey Myat Noe",
+          "age":26,
+          "isstudent":false,
+          "hascar":true,
+          "hobbies":["reading","travelling"]
+     },
+     {
+          "name":"Aung Mying Myat",
+          "age":20,
+          "isstudent":false,
+          "hascar":true,
+          "hobbies":["reading","gaming"]
+     },
+     {
+          "name":"Chaw Chit Hlaing",
+          "age":25,
+          "isstudent":false,
+          "hascar":true,
+          "hobbies":["reading","travelling"]
+     },
+     {
+          "name":"Ya Min May",
+          "age":26,
+          "isstudent":false,
+          "hascar":true,
+          "hobbies":["reading","eating"]
+     }
+]

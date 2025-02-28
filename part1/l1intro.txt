@@ -1,0 +1,211 @@
+=> Environment 
+     (i) Text Editor 
+     (ii) Integrated Development Environment (IDE)
+
+=>Who Use Python 
+     1. Software Developers 
+          Backend development, web applications (eg. Django, Flask)
+
+     2. Data Scientists and Analysts 
+          Data analysis, data visualization and statistical modeling
+     3. AI (Artificial Intelligence) and ML (Machine Learning)
+          TensorFlow, Pytorch, Keras 
+     4. Engineers 
+          automation, simulations, (eg. Raspberry Pi)
+     5. Cybersecurity / Networking
+          creating custom security tools   
+     6. Game Developers 
+          Pygame
+
+=> What is programming 
+1. Creating Algorithms
+     sorting to number and datas
+2. Writing Code 
+     Programmer have to code (Python, Java, C++,etc...)
+3. Compiling or Interpreting Code 
+     Compiler: All Code in one time 
+     Interpreter: Code in one line
+4. Problem-Solving 
+5. Debugging 
+     Bug
+6. Testing 
+     Test Program
+7. Creating Software Applications 
+     Create Software (Web App, Mobile App, Desktop App)
+8. Automation 
+     Repetitive Process
+9. Building User Interface (UI)
+10. Maintaing and Optimizing
+
+=>What is Programmer 
+1. Writing Code 
+2. Creating Software Applications
+     Web Development 
+     Mobile Development 
+     Game Development 
+     Data Science 
+     Cybersecurity
+3. Problem Solving 
+4. Testing and Debugging 
+5. Optimizing Code
+6. Collaboration 
+     Developers, Designer, Project Manager
+7. Maintaining Software
+
+=>What is Programming Language 
+1. Syntax 
+2. Instruction
+3. Data Types
+4. Compilers and Interpreters
+     Compilers Languages : (C,C++,Go(Goland).etc)
+     Interpreters Languages : Python
+5. Variables and Functions 
+6. High-Level or Low-Level Language
+     High-Level Language (Python, Java,etc...)
+     Low-Level Language (Assembly, Machine Code)
+
+Hight-Level Language 
+Assembly Code 
+Machine Language
+Hardware
+
+=Why HTML is not programming language ? 
+     Hypertext Markup Language - 
+          NO Logic 
+          No Data Manipulation 
+          No Computation
+
+     1. No Logic and Control Structure
+     2. Description
+     3. Variables and Functions 
+     4. Static Content
+     5. either Compiler nor Interpreter 
+=>Why CSS is not programming language ? 
+     Cascading Style Sheets , 
+          either Compiler nor Interpreter    
+          SSL (Style Sheet Language) or SPL (Static Presentation Language)
+          Not Logic-based Language so can't computation
+=> Javascript 
+     Interpreter
+          Browser
+     JTI (Just-in-Time) Compilation
+
+=> Markup Language Vs Programming Language 
+     Markup = Description 
+     Programming = order 
+     
+=>Compiler Vs Interpreter 
+    (Compiler = Source Code to Machine Code)
+    => 1. program.go
+        import "fmt"
+            func myfun(){
+                fmt.Println("Hello Aung Aung")
+            }
+
+    => 2. Compiling
+        go build -o program program.go
+
+    => 3. Linking
+        Go Runtime, Libraties, Dependency Files, Binary File
+
+    =>4. Execution(Machine Code)
+
+=>Interpreter
+    program.py
+    Python source code -> byte code (.pyc format) -> Interpreted line by line (Python Virtual Machine(PVM))
+
+=>How Python Code Work?
+    Interpreted Language 
+    compilation and intrepretation, are both included
+
+    1. Python source code (.py)
+        print("Hello Aung Aung")
+    2. Interpretation
+    3. byte code (.pyc format)
+        Byte is Platform-independent
+        PVM -> CPU -> run
+    4. Just-in-Time (JIT) Compilation
+
+=> Advantage of Python Programming Language
+     1. Easy Syntax
+          print("Hello World")
+     2. Interpreted Language
+     3. High-Level Language
+     4. Dynamic Type Language 
+          eg. Statically Type Language (C C++ C# Java Go Swift)
+
+          eg. (java example code)
+          public class Main{
+               public static void main(String[] args){
+                    int x = 100; // Static type : int
+                    double y = 9.99 // Static type : double
+                    String name = "Aung Aung"; // Static type : String
+
+                    System.out.println("x value is "+x);
+                    System.out.println("y value is "+y);
+                    System.out.println("name value is "+name);
+               }
+          }
+
+          eg. (python example code)
+          x=10 # integer 
+          y = "Maung Maung" #string
+          print("x value is "+x)
+          print("name value is "+name)
+     5. General purpose Language
+          Web Development
+          Data Analysis 
+          Artificial Intelligence
+          Game Development 
+          Mobile Applicationn
+
+     https://www.python.org/
+
+     sudo apt update
+     sudo apt upgrade -y
+
+sudo apt install python3
+
+=>Install on ububntu 
+     Python-3.12.6.tar.xz 
+     
+
+=>Check Version 
+     python3 --version
+     python3.12 --version
+     
+     python3
+     ctl+d (or) exit()
+
+     python3 l1sample.py 
+     python l1sample.py
+     py l1sample.py
+
+=>Install on ubuntu 
+ls
+tar -xvf Python
+ls 
+cd Python-3.1
+ls 
+./configure 
+make 
+sudo make install
+
+=>Comment (inline comment)
+     #
+
+
+"""
+print('hello sir')
+print('hello sir')
+print('hello sir')
+print('hello sir')
+"""
+
+
+'''
+print('hello sir')
+print('hello sir')
+print('hello sir')
+print('hello sir')
+'''
