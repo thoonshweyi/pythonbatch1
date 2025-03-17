@@ -76,7 +76,7 @@ users = {
 }
 
 # print("username" in users)
-# print(field in users and users[field] for field in requiredfields)
+# print(field in users and (users[field] for field in requiredfields))
 
 getresult = all(field in users and users[field] for field in requiredfields) # all([True,True,True])
 print(getresult)

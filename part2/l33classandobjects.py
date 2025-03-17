@@ -58,3 +58,18 @@ def main() ->None :
 
 if __name__ == "__main__":
      main()
+
+
+
+
+#      What is __name__?
+# __name__ is a special built-in variable in Python.
+
+# When you run a file directly, Python sets __name__ = "__main__".
+# When you import a file, Python sets __name__ = "filename" (the module name).
+
+
+
+# When you define a function with the same name multiple times,
+# Python keeps only the last definition.
+# So, when the function is called, it uses the last one, not the first one.
