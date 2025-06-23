@@ -11,7 +11,7 @@ def main():
           print("6  Export Contact")
           print("7. exit")
 
-          choice = input("Choose an option")
+          choice = input("Choose an option: ")
           if choice == "1":
                name = input("Name: ")
                phone = input("Phone: ")
@@ -31,10 +31,10 @@ def main():
                contactid = int(input("Contact ID to edit: "))
                contactObj.deletecontact(contactid)
           elif choice == "5":
-               impjsonfile = input("Import file (JSON)")
+               impjsonfile = input("Import file (JSON): ")
                contactObj.importcontacts(impjsonfile)
           elif choice == "6":
-               expjsonfile = input("Export file (JSON)")
+               expjsonfile = input("Export file (JSON): ")
                contactObj.exportcontacts(expjsonfile)
           elif choice == "7":
                print("Goodbye !")

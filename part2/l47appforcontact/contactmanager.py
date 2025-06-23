@@ -101,15 +101,15 @@ class ContactManager:
 # ]
 
 # new.json
-[
-     {
-          "name":"yu yu",
-          "phone":"012345",
-          "email":"yuyu@gmail.com",
-     },
-     {
-          "name":"yu yu",
-          "phone":"012345",
-          "email":"yuyu@gmail.com",
-     }
-]
+# [
+#      {
+#           "name":"yu yu",
+#           "phone":"012345",
+#           "email":"yuyu@gmail.com",
+#      },
+#      {
+#           "name":"yu yu",
+#           "phone":"012345",
+#           "email":"yuyu@gmail.com",
+#      }
+# ]
