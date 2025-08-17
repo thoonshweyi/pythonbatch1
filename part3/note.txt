@@ -1,0 +1,102 @@
+ python --version
+Python 3.12.6
+
+=> How to install Python in Ubuntu
+
+sudo apt update
+sudo apt upgrade
+
+=> Install Open SSL
+# Ubuntu
+     sudo apt install libssl-dev openssl
+
+# MAC 
+     brew install openssl
+
+=> Python Install
+
+wget https://www.python.org/ftp/python/3.13.6/Python-3.13.6.tar.xz
+tar -xf Python-3.13.6.tar.xz
+cd Python-3.13.6
+     ./configure
+
+     # Compile and Install
+     make -j$(nproc)
+     sudo make altinstall
+
+     sudo ldconfig //  Optional - refresh shared library cache
+
+----------------------------------------------
+=> Install pip3
+#Ubuntu 
+     sudo apt install python3-pip -y
+     pip3 --version or python3 -m pip --version
+
+     pip --version, python3 -m pip --version
+
+
+     pip3 list           or        pip list   
+
+Mac OS
+brew update
+brew upgrade
+------------------------------------------------------
+=>Install Virtual Environment 
+     #Linux
+     sudo apt install python3-venv
+
+
+=> Create Virtual Environment
+     #Linux/macOS
+     python3 -m venv myenv              // you can use anyname whatever you want "myenv"
+
+     #Windows 
+     py -m venv myenv
+
+     => for activate
+          #Linux/macOS
+          source myenv/bin/activate // activate
+
+          #Windows
+          .\myenv\Scripts\activate      // activate
+
+          pip3 list
+
+          deactivate
+          (myenv) administrator@administrator:~/Documents/class/pythonbathc1 $ deactivate 
+          administrator@administrator:~/Documents/class/pythonbathc1
+
+          pip3 list
+
+------------------------------------------------------
+
+=> (Upgrade Python Version) Linux User
+     
+     (i) Remove Python Instllation folders
+          sudo rm -rf /usr/local/lib/python3.13
+          sudo rm /usr/local/bin/python3.13*
+
+     (ii) =>  Python Install
+
+          wget https://www.python.org/ftp/python/3.13.6/Python-3.13.6.tar.xz
+          tar -xf Python-3.13.6.tar.xz
+          cd Python-3.13.6
+               ./configure
+
+          # Compile and Install
+          make -j$(nproc)
+          sudo make altinstall
+
+          sudo ldconfig //  Optional - refresh shared library cache
+
+
+------------------------------------------------------
+=Excel File
+https://pypi.org/project/openpyxl/
+pip install openpyxl
+
+
+=https://pypi.org/project/pillow/
+https://pillow.readthedocs.io/en/stable/
+pip install pillow
+
