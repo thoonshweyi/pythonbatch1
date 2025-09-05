@@ -1,9 +1,9 @@
 from gmailsender import GmailSender
 
-sender = "datalandtechnology@gmail.com"
-apppassword = ""
+sender = "thoonthoon469@gmail.com"
+apppassword = "vhhk jbnp qdao yvjo"
 
-receiver = "tinhtutaung.dlt@gmail.com"
+receiver = "thoonlay779@gmail.com"
 subject = "Test Email from Python OOP"
 body = "This is a test email sent from Python class using Gmail SMTP."
 

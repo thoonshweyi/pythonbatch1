@@ -59,6 +59,7 @@ brew upgrade
 
           #Windows
           .\myenv\Scripts\activate      // activate
+          
 
           pip3 list
 
