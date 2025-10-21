@@ -1,0 +1,84 @@
+=>Install Virtual Environment 
+     #Linux
+     sudo apt install python3-venv
+
+
+=> Create Virtual Environment
+     #Linux/macOS
+     python3 -m venv myenv              // you can use anyname whatever you want "myenv"
+
+     #Windows 
+     py -m venv myenv
+
+     => for activate
+          #Linux/macOS
+          source myenv/bin/activate // activate
+
+          #Windows
+          .\myenv\Scripts\activate      // activate
+          
+
+          pip3 list
+
+          deactivate
+          (myenv) administrator@administrator:~/Documents/class/pythonbathc1 $ deactivate 
+          administrator@administrator:~/Documents/class/pythonbathc1
+
+          pip3 list
+
+----------------------------------------------
+=> mysql module (v9.4.0)
+     https://pypi.org/project/mysql-connector-python/
+     
+     pip install mysql-connector-python
+
+     pip3 list
+
+= python dotenv (v  1.1.1)
+     (i) Install
+     https://pypi.org/project/python-dotenv/
+
+     pip install python-dotenv
+
+     pip3 list
+
+     create .env file
+
+     (ii) Create
+     create .env file
+
+     (iii) import
+          from dotenv import load_dotenv
+          import os
+
+          load_dotenv() 
+
+
+-----------------------------------------------------
+import mysql.connector
+
+# Connect to server
+cnx = mysql.connector.connect(
+    host="127.0.0.1",
+    port=3306,
+    user="root",
+    password=""
+    )
+
+# Get a cursor
+cur = cnx.cursor()
+
+# Execute a query
+cur.execute("SELECT CURDATE()")
+
+# Fetch one result
+row = cur.fetchone()
+print("Current date is: {0}".format(row[0]))
+
+# Close connection
+cnx.close()
+
+
+
+pip uninstall mysql-connector-python -y
+pip install mysql-connector-python==8.0.33
