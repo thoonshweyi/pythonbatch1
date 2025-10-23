@@ -3,17 +3,6 @@ from mysql.connector import Error
 from dotenv import load_dotenv
 import os
 
-
-# Method 1 (without .env)
-# config = {
-#      "host":"127.0.0.1",
-#      "port":3306,
-#      "user":"root",
-#      "password":"",
-#      "database":"pydbone"
-# }
-
-# Method 2 (with .env)
 load_dotenv() 
 config = {
      "host": os.getenv("DB_HOST"),
@@ -22,6 +11,15 @@ config = {
      "password": os.getenv("DB_PASS"),
      "database": os.getenv("DB_NAME")
 }
+
+createtable_sql = '''
+     CREATE TABLE IF NOT EXISTS staffs(
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          username VARCHAR(50) NOT NULL,
+          email VARCHAR(100) UNIQUE NOT NULL,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     ) ENGINE=InnoDB;
+'''
 
 
 # Connect to server
@@ -33,13 +31,12 @@ try:
           cursor = conn.cursor()
 
           # Execute a query
-          cursor.execute("SELECT VERSION()")
+          cursor.execute(createtable_sql)
+          conn.commit()
+          print("Table created successfully!")
 
-          # Fetch one result
-          version = cursor.fetchone()
-          #print("MySQL server version =",version) # MySQL server version = (datetime.date(2025, 10, 20),) # MySQL server version = 2025-10-20
-          print("MySQL server version =",version[0]) #MySQL server version = 10.4.28-MariaDB
-
+          cursor.close() # Close cursor
+          conn.close() # Close connection
      
 except Error as e:
      print("Error",e)
