@@ -1,0 +1,63 @@
+=>Install Virtual Environment 
+     #Linux
+     sudo apt install python3-venv
+
+
+=> Create Virtual Environment
+     #Linux/macOS
+     python3 -m venv myenv              // you can use anyname whatever you want "myenv"
+
+     #Windows 
+     py -m venv myenv
+
+     => for activate
+          #Linux/macOS
+          source myenv/bin/activate // activate
+
+          #Windows
+          .\myenv\Scripts\activate      // activate
+          
+
+          pip3 list
+
+          deactivate
+          (myenv) administrator@administrator:~/Documents/class/pythonbathc1 $ deactivate 
+          administrator@administrator:~/Documents/class/pythonbathc1
+
+          pip3 list
+
+----------------------------------------------
+=> mysql module (v9.4.0)
+     https://pypi.org/project/mysql-connector-python/
+     
+     pip install mysql-connector-python
+
+     pip3 list
+
+= python dotenv (v  1.1.1)
+     (i) Install
+     https://pypi.org/project/python-dotenv/
+
+     pip install python-dotenv
+
+     pip3 list
+
+     create .env file
+
+     (ii) Create
+     create .env file
+
+     (iii) import
+          from dotenv import load_dotenv
+          import os
+
+          load_dotenv() 
+
+
+-----------------------------------------------------
+🧩 Why the error occurs (Unread result found)
+
+When you execute a query using cursor.execute(sql), MySQL sends a result set back to the client.
+If you don’t fetch all rows (e.g., by calling fetchone(), fetchmany(), or fetchall() until completion), and then you try to execute another query, MySQL raises:
+
+mysql.connector.errors.InterfaceError: Unread result found
