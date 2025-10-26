@@ -1,0 +1,148 @@
+=>Install Virtual Environment 
+     #Linux
+     sudo apt install python3-venv
+
+
+=> Create Virtual Environment
+     #Linux/macOS
+     python3 -m venv myenv              // you can use anyname whatever you want "myenv"
+
+     #Windows 
+     py -m venv myenv
+
+     => for activate
+          #Linux/macOS
+          source myenv/bin/activate // activate
+
+          #Windows
+          .\myenv\Scripts\activate      // activate
+          
+
+          pip3 list
+
+          deactivate
+          (myenv) administrator@administrator:~/Documents/class/pythonbathc1 $ deactivate 
+          administrator@administrator:~/Documents/class/pythonbathc1
+
+          pip3 list
+
+----------------------------------------------
+=> mysql module (v9.4.0)
+     https://pypi.org/project/mysql-connector-python/
+     
+     pip install mysql-connector-python
+
+     pip3 list
+
+= python dotenv (v  1.1.1)
+     (i) Install
+     https://pypi.org/project/python-dotenv/
+
+     pip install python-dotenv
+
+     pip3 list
+
+     create .env file
+
+     (ii) Create
+     create .env file
+
+     (iii) import
+          from dotenv import load_dotenv
+          import os
+
+          load_dotenv() 
+
+-----------------------------------------------------
+=> Telegram Bot (v 22.5)
+
+     https://python-telegram-bot.org/
+
+     pip install python-telegram-bot
+
+     pip3 list
+-----------------------------------------------------
+=> Get Telegram Token Key
+     (i) Google or Telegram app, find @BotFather
+          https://web.telegram.org/k/#@BotFather
+
+     (ii) Create a new bot
+          click start or send /start
+          Send /newbot
+
+               BotFather will ask for:
+                    Bot name for your bot = pybotl73
+                    Bot username = Must end with bot = pybot73bot
+     (iii) Copy your API Token
+               Done! Congratulations on your new bot. You will find it at t.me/Thorn4RBot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+
+               Use this token to access the HTTP API:
+               8305029910:AAHS6A32aZF4opr84u1jGTsZdS7NOLshhUY
+               Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+               For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
+
+          =>Simple code
+               from telegram import Update
+               from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+
+
+               async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+               await update.message.reply_text(f'Hello {update.effective_user.first_name}')
+
+
+               app = ApplicationBuilder().token("YOUR TOKEN HERE").build()
+
+               app.add_handler(CommandHandler("hello", hello))
+
+               app.run_polling()
+
+
+-----------------------------------------------------
+
+=> Create Database
+     CREATE TABLE IF NOT EXISTS telegramusers(
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          user_id BIGINT,
+          first_name VARCHAR(225),
+          username VARCHAR(255),
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     )
+
+---------------------------------------------------------------------
+Thoon Shwe Yi, [26.10.2025 13:27]
+/newbot
+
+BotFather, [26.10.2025 13:27]
+Alright, a new bot. How are we going to call it? Please choose a name for your bot.
+
+Thoon Shwe Yi, [26.10.2025 13:30]
+numberonebot
+
+BotFather, [26.10.2025 13:30]
+Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
+
+Thoon Shwe Yi, [26.10.2025 13:30]
+NumberOneBot
+
+BotFather, [26.10.2025 13:30]
+Sorry, this username is already taken. Please try something different.
+
+Thoon Shwe Yi, [26.10.2025 13:31]
+ThornBot
+
+BotFather, [26.10.2025 13:31]
+Sorry, this username is already taken. Please try something different.
+
+Thoon Shwe Yi, [26.10.2025 13:31]
+Thorn4RBot
+
+BotFather, [26.10.2025 13:31]
+Done! Congratulations on your new bot. You will find it at t.me/Thorn4RBot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+
+Use this token to access the HTTP API:
+8305029910:AAHS6A32aZF4opr84u1jGTsZdS7NOLshhUY
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
